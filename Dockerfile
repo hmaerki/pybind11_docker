@@ -40,5 +40,7 @@ RUN git clone https://github.com/pybind/python_example.git
 RUN cd python_example \
     pip install -e .
 
+COPY support/* /home/pybind11/tests/
+
 WORKDIR /home/pybind11
 CMD ["ipython"]

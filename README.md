@@ -49,3 +49,15 @@ collected 464 items / 1 skipped / 463 selected
 ...
 ============================================== 458 passed, 7 skipped in 7.62s ===============================================
 ```
+
+or
+
+```bash
+$ cd /home/pybind11/build/tests
+$ export PYTHONPATH=/home/pybind11/build/tests
+$ pytest
+```
+
+You may connect to the container using visual studio code.
+Open the /home/pybind11/tests/pybind_pytest.code-workspace.
+Install python extension and the test explorer displays all tests.
